@@ -35,7 +35,7 @@ button {
   color: white;
   font-weight: bold;
   font-size: 1.2rem;  /* Increased base font size for buttons */
-  width: clamp(200px, 60vw, 300px); /* Responsive button width */
+  width: 70vw;  /* Set button width to 70% of viewport width */
   margin-bottom: 15px;  /* Add some space between buttons */
   border-radius: 5px;
   text-transform: uppercase;  /* Make button text uppercase */
