@@ -8,29 +8,35 @@ body {
 
 .container {  /* Added a class for the container */
   background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
-  padding: 30px;  /* Add some padding for spacing */
+  padding: 50px;  /* Increased padding for more spacing on smaller screens */
   border-radius: 10px;  /* Round corners for the container */
   color: white;  /* Make text within the container white */
+  display: flex;  /* Use flexbox for button positioning */
+  flex-direction: column;  /* Stack buttons vertically */
+  justify-content: center;  /* Center buttons vertically within container */
+  align-items: center;  /* Center buttons horizontally within container */
 }
 
 h1 {
+  font-size: clamp(2.5rem, 8vw, 4rem);  /* Responsive font size for h1 */
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: clamp(3rem, 10vw, 5rem);  /* Increased font size for h2 (counter) */
   margin-top: 0;
   margin-bottom: 20px;
 }
 
 button {
   border: none;
-  padding: 10px 20px; /* Adjust padding for better button size */
+  padding: 20px 40px; /* Increased padding for better button size */
   color: white;
   font-weight: bold;
-  width: 200px;
-  margin-bottom: 5px;
+  font-size: 1.2rem;  /* Increased base font size for buttons */
+  width: clamp(200px, 60vw, 300px); /* Responsive button width */
+  margin-bottom: 15px;  /* Add some space between buttons */
   border-radius: 5px;
   text-transform: uppercase;  /* Make button text uppercase */
   cursor: pointer;  /* Set cursor to pointer on hover */
