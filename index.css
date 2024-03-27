@@ -1,0 +1,57 @@
+body {
+  background-image: url("bball.jpg");  /* Assuming your background image is named bball.jpg */
+  background-size: cover;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  height: 100vh;
+}
+
+.container {  /* Added a class for the container */
+  background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black background */
+  padding: 30px;  /* Add some padding for spacing */
+  border-radius: 10px;  /* Round corners for the container */
+  color: white;  /* Make text within the container white */
+}
+
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px; /* Adjust padding for better button size */
+  color: white;
+  font-weight: bold;
+  width: 200px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;  /* Make button text uppercase */
+  cursor: pointer;  /* Set cursor to pointer on hover */
+}
+
+/* Button hover effect: Lighter shade on hover */
+button:hover {
+  background-color: lighten(#C80000, 10%); /* Lighter shade for increment button */
+  background-color: lighten(#009E60, 10%); /* Lighter shade for save button */
+}
+
+/* Button click effect: Darker shade on click */
+button:active {
+  background-color: darken(#C80000, 10%); /* Darker shade for increment button */
+  background-color: darken(#009E60, 10%); /* Darker shade for save button */
+}
+
+#increment-btn {
+  background: #C80000; /* Reddish brown for increment */
+}
+
+#save-btn {
+  background: #009E60; /* Dark green for save */
+}
