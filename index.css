@@ -3,7 +3,10 @@ body {
   background-size: cover;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  height: 100vh;
+  height: 100vh;  /* Set body height to 100 viewport height */
+  display: flex;  /* Wrap entire content in flexbox */
+  justify-content: center;  /* Center content vertically */
+  align-items: center;  /* Center content horizontally */
 }
 
 .container {  /* Added a class for the container */
@@ -40,6 +43,8 @@ button {
   border-radius: 5px;
   text-transform: uppercase;  /* Make button text uppercase */
   cursor: pointer;  /* Set cursor to pointer on hover */
+  flex: 0 0 auto;  /* Set flexbox properties for height */
+  height: 20vh;  /* Set approximate button height (might vary slightly) */
 }
 
 /* Button hover effect: Lighter shade on hover */
